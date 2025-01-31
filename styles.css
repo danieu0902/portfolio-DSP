@@ -1,0 +1,11 @@
+/* Importación de fuentes antes de meterlas en archivo */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&family=Raleway:wght@400;700&display=swap');
+
+:root {
+    --color-fondo: #121212;
+    --color-primario: #FF6B6B;
+    --color-secundario: #1E90FF;
+    --color-texto: #EAEAEA;
+    --fuente-titulo: 'Poppins', sans-serif;
+    --fuente-texto: 'Raleway', sans-serif;
+}
