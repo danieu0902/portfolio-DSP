@@ -79,13 +79,36 @@ section {
     padding: 4rem 2rem;
     text-align: center;
 }
-.sobre-mi {
-    padding: 4rem 2rem;
+#sobre-mi {
     text-align: center;
-    
+    padding: 4rem 2rem;
 }
-.sobre-mi img{
-width: 100px;
+
+#sobre-mi h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.sobre-mi-texto {
+    max-width: 65%;
+    background: linear-gradient(140deg, blue, cyan); 
+    padding: 1rem;
+    border-radius: 10px; 
+    color: white; 
+}
+
+.sobre-mi-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.perfil-img {
+    width: 220px; 
+    height: auto;
+    border-radius: 10px; 
 }
 
 .proyecto {
