@@ -21,22 +21,23 @@ body {
 
 /* Estilos del header */
 header {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.8); 
     padding: 1rem;
     text-align: center;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 98%;
-    top: 0;
-    left: 0;
-    backdrop-filter: blur(10px);
-    opacity: 0.3;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 98%; 
+    top: 0; 
+    left: 0; 
+    backdrop-filter: blur(10px); 
+    opacity: 0.3; 
+    position: relative; 
 }
-header:hover{
-    opacity: 1;
-    transition: all 0.5s ease-in-out;
+
+header:hover {
+    opacity: 1; 
+    transition: all 0.5s ease-in-out; 
 }
 
 .logo {
@@ -71,7 +72,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: var(--color-primario);
+    color: var(--color-secundario);
 }
 
 /* Secciones */
@@ -105,20 +106,46 @@ section {
     margin: 0 auto;
 }
 
+.perfil-container {
+    position: relative;
+    display: inline-block;
+}
 .perfil-img {
-    width: 220px; 
-    height: auto;
-    border-radius: 10px; 
+    width: 220px;
+    transition: opacity 0.3s ease;
+}
+.descarga-cv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.perfil-container:hover .perfil-img {
+    opacity: 0;
+}
+.perfil-container:hover .descarga-cv {
+    opacity: 1;
 }
 
 .proyecto {
     display: inline-block;
     width: 30%;
     margin: 10px;
-    background: #1c1c1c;
+    background:var(--color-secundario);
     padding: 1rem;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
+}
+.proyecto a{
+    text-decoration: none;
+    color: cyan;
 }
 
 .proyecto img {
@@ -189,6 +216,8 @@ form {
     max-width: 400px;
     margin: auto;
     border-radius: 10px;
+    background-color:var(--color-secundario);
+    color: var(--color-texto);
 }
 
 input, textarea {
@@ -221,6 +250,40 @@ button .icon {
 button:hover {
     transform: scale(1.1);
 }
+
+/* Redes sociales */
+.redes-sociales {
+    display: flex; /* Alinea los iconos en una fila */
+    justify-content: center; /* Centra los iconos horizontalmente */
+    gap: 20px; /* Espacio entre los iconos */
+    padding: 20px; /* Espaciado interno */
+}
+
+.redes-sociales a {
+    font-size: 2rem; /* Tamaño de los iconos */
+    color: #333; /* Color base de los iconos */
+    text-decoration: none; /* Elimina el subrayado */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+.redes-sociales a:hover {
+    color: #0077b5; /* Color cuando el ratón pasa por encima (puedes cambiarlo según la red social) */
+    transform: scale(1.2); /* Efecto de aumento al pasar el ratón */
+}
+
+.fa-github:hover {
+    color: goldenrod; /* Color específico para GitHub */
+}
+
+.fa-linkedin:hover {
+    color: #0e76a8; /* Color específico para LinkedIn */
+}
+
+.fa-instagram:hover {
+    color: var(--color-primario); /* Color específico para Instagram */
+}
+
+
 
 /* Pie de página */
 footer {
