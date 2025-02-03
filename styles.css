@@ -75,6 +75,12 @@ nav ul li a:hover {
     color: var(--color-secundario);
 }
 
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+}
 /* Secciones */
 section {
     padding: 4rem 2rem;
@@ -253,34 +259,34 @@ button:hover {
 
 /* Redes sociales */
 .redes-sociales {
-    display: flex; /* Alinea los iconos en una fila */
-    justify-content: center; /* Centra los iconos horizontalmente */
-    gap: 20px; /* Espacio entre los iconos */
-    padding: 20px; /* Espaciado interno */
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    padding: 20px; 
 }
 
 .redes-sociales a {
-    font-size: 2rem; /* Tamaño de los iconos */
-    color: #333; /* Color base de los iconos */
-    text-decoration: none; /* Elimina el subrayado */
-    transition: color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+    font-size: 2rem; 
+    color: #333; 
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease; 
 }
 
 .redes-sociales a:hover {
-    color: #0077b5; /* Color cuando el ratón pasa por encima (puedes cambiarlo según la red social) */
-    transform: scale(1.2); /* Efecto de aumento al pasar el ratón */
+    color: #0077b5; 
+    transform: scale(1.2); 
 }
 
 .fa-github:hover {
-    color: goldenrod; /* Color específico para GitHub */
+    color: goldenrod; 
 }
 
 .fa-linkedin:hover {
-    color: #0e76a8; /* Color específico para LinkedIn */
+    color: #0e76a8; 
 }
 
 .fa-instagram:hover {
-    color: var(--color-primario); /* Color específico para Instagram */
+    color: var(--color-primario); 
 }
 
 
@@ -311,5 +317,23 @@ footer {
     }
     header {
         flex-direction: column;
+    }
+    .sobre-mi-contenido {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    /* Reducir tamaño de la imagen en pantallas móviles */
+    .perfil-img {
+        width: 80%; 
+        max-width: 300px; 
+        margin-bottom: 20px; 
+    }
+
+    /* Ajustes del texto */
+    .sobre-mi-texto {
+        max-width: 90%; 
+        margin: 0 auto;
     }
 }
